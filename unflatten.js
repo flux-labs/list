@@ -1,20 +1,23 @@
 'use strict';
 
 /**
- * Code block template.
+ * Un-Flatten a list based on a guide list
+ * @param {List} Flattened list
+ * @param {Structure} Guide List
  *
+ * @returns {UnFlattened} Unflattened list
  */
-function run(flattened, structure) {
+function run(List, Structure) {
 
 	function traverse(arr) {
 		if (Array.isArray(arr))
 			return arr.map(traverse);
 		else
-			return flattened.shift();
+			return List.shift();
 	}
 	
 	return {
-		unflattened: traverse(structure)
+		UnFlattened: traverse(Structure)
 	};
 }
 
