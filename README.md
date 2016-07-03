@@ -16,7 +16,7 @@ Output:
 	NewList: new list of items
 
 ### `RemoveNulls(list)`
-Removes all null values from list.
+Removes all null values from list. Mainly useful since existing blocks don't accept "null" as an input.
 
 ### `Where(list, obj)`
 Returns all objects in a list containing properties that match the input object. Wrapper for "where" function in lodash 2.4.2.
