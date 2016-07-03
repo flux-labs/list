@@ -14,3 +14,10 @@ Inputs:
 	Items: can be a list or an individual item
 Output:
 	NewList: new list of items
+
+### `RemoveNulls(list)`
+Removes all null values from list.
+
+### `Where(list, obj)`
+Returns all objects in a list containing properties that match the input object. Wrapper for "where" function in lodash 2.4.2.
+
